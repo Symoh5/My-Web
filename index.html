@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandshuz - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header with Hamburger Menu -->
+    <header>
+        <h1>Brandshuz</h1>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for shoes..." oninput="searchProducts()" />
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar-menu" class="sidebar-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="popular.html">Popular</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="casual.html">Casual</a></li>
+            <li><a href="formal.html">Formal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Grid -->
+    <main>
+        <h2>Featured Shoes</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Dynamic product results will appear here -->
+        </div>
+
+        <div id="related-products">
+            <h3>Related Products</h3>
+            <div class="product-grid" id="related-products-grid">
+                <!-- Related Products will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Brandshuz. All rights reserved.</p>
+        <p><a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy</a></p>
+    </footer>
+</body>
+</html>
